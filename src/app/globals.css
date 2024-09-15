@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply font-barlow;
+    }
+
+    html {
+        @apply scroll-smooth;
+    }
+}
+
+@layer components {
+    /* ------- Section ------- */
+    ._section_padding {
+        @apply xl:py-[110px]  py-[60px];
+    }
+
+    /* ------- Section End ------- */
+
+    /* ------- Typography ------- */
+    ._title {
+        @apply sm:text-[78px] text-[42px] font-bold sm:leading-[86px] leading-[44px]  font-barlow-condensed text-white uppercase;
+    }
+    ._subtitle_72 {
+        @apply sm:text-[72px] text-[42px] font-bold sm:leading-[84px] leading-[50px]  font-barlow-condensed text-white uppercase;
+    }
+    ._subtitle_48 {
+        @apply font-barlow-condensed font-bold sm:text-[48px] sm:leading-[48px] text-[36px] leading-[44px] text-white uppercase;
+    }
+    ._subtitle_36 {
+        @apply font-barlow-condensed font-bold sm:text-[36px] sm:leading-[44px] text-[30px] leading-[30px] text-white uppercase;
+    }
+    ._h4 {
+        @apply font-barlow-condensed font-bold text-[30px] leading-[28px] text-white uppercase;
+    }
+    ._text_lg {
+        @apply font-barlow font-normal sm:text-[24px] text-[18px] leading-[36px] sm:space-y-[30px] space-y-[0px] text-white/[72%];
+    }
+    ._text {
+        @apply font-barlow font-normal sm:text-[20px] text-[18px] sm:leading-[28px] leading-[26px] sm:space-y-[30px] space-y-[24px] text-white/[72%];
+    }
+    ._text_s {
+        @apply font-barlow font-normal sm:text-[18px] sm:leading-[18px] text-[16px] leading-[24px] text-white/[72%] uppercase;
+    }
+    ._button_text {
+        @apply font-barlow-condensed font-semibold sm:text-[20px] text-[16px] sm:leading-[18px] leading-[16px] text-white;
+    }
+    ._button_text_sm {
+        @apply font-barlow-condensed font-semibold text-[18px] leading-[18px] text-white;
+    }
+
+    ._link_text {
+        @apply font-barlow font-normal text-[18px] leading-[18px] text-white hover:text-yellow duration-200 ease-linear;
+    }
+
+    ._footer_text {
+        @apply font-normal sm:text-[18px] sm:leading-[26px] text-[16px] leading-[24px] text-white/[72%];
+    }
+
+    /* ------- Typography End -------*/
+
+    /* ------- Placing ------- */
+    .__center_all,
+    .__c_all {
+        @apply flex items-center justify-center;
+    }
+    /* ------- Placing End ------- */
+
+    /* ------- Buttons ------- */
+    ._button {
+        @apply __center_all uppercase duration-200 disabled:cursor-not-allowed shrink-0 disabled:opacity-40;
+    }
+    /* ._button_lg {
+        @apply sm:gap-6 gap-3 _button_text rounded-full px-[30px] sm:py-[27px] py-[15px] bg-yellow hover:bg-yellow/80 _button;
+    } */
+    ._button_lg {
+        @apply sm:w-[234px] w-[160px] sm:h-[72px] h-[46px] _button_text rounded-full sm:px-[30px] px-0 sm:py-[27px] py-[15px] bg-yellow hover:bg-yellow/80 _button;
+    }
+    .button_lg_outline {
+        @apply sm:w-[234px] w-[160px] sm:h-[72px] h-[46px] _button_text rounded-full sm:px-[30px] px-0 sm:py-[27px] py-[15px] bg-transparent border border-white hover:bg-yellow/80 hover:border-yellow _button;
+    }
+    .button_sm {
+        @apply _button_text_sm rounded-full px-[30px] sm:py-[15px] py-[15px] gap-y-[10px] bg-yellow hover:bg-yellow/80 _button;
+    }
+    .button_md {
+        @apply _text_s font-semibold font-barlow-condensed rounded-full px-[36px] py-[21px] gap-y-[10px] bg-yellow hover:bg-yellow/80 _button text-black;
+    }
+    .button_md_white {
+        @apply _text_s font-semibold font-barlow-condensed rounded-full px-[36px] py-[21px] gap-y-[10px] bg-white hover:bg-white/80 _button text-black;
+    }
+
+    /* ------- Buttons End ------- */
+
+    /* ------- Inputs ------- */
+    ._input {
+        @apply w-full h-[48px] py-2 px-5 border border-white rounded-xl bg-white/[12%] text-white focus:outline-none disabled:opacity-60 text-base;
+    }
+    ._input_label {
+        @apply text-base leading-[16px] mb-3 block;
+    }
+    .text_area {
+        @apply w-full sm:h-[120px] h-[90px] py-2 px-4 border border-white rounded-xl bg-white/[12%] text-white focus:outline-none disabled:opacity-60 text-base;
+    }
+
+    /* ------- Inputs End ------- */
+
+    /* ------- Linear Gradient ------- */
+    ._cta_gradient {
+        @apply sm:bg-gradient-to-r bg-gradient-to-b from-yellow to-[#3C3C43];
+    }
+
+    /* ------- Linear Gradient End ------- */
+}

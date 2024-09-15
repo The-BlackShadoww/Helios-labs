@@ -1,0 +1,49 @@
+{
+    // Set the default formatter for JavaScript and TypeScript (Prettier recommended)
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+    // Format the file when saving
+    "editor.formatOnSave": true,
+
+    // Formatting options
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.trimAutoWhitespace": true,
+
+    // Ensure consistent line endings across all systems
+    "files.eol": "\n",
+
+    // Configure Prettier specific settings
+    "prettier.printWidth": 80, // Set line width for formatting
+    "prettier.singleQuote": true, // Use single quotes instead of double quotes
+    "prettier.trailingComma": "es5", // Add trailing commas where valid in ES5 (objects, arrays, etc.)
+    "prettier.arrowParens": "always", // Always include parentheses in arrow function arguments
+    "prettier.bracketSpacing": true, // Print spaces between brackets in object literals
+    "prettier.jsxSingleQuote": true, // Use single quotes in JSX
+    "prettier.tabWidth": 4,
+
+    // ESLint integration (make sure ESLint is installed in your project)
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact"
+    ],
+    "editor.codeActionsOnSave": {
+        "source.fixAll": "explicit",
+        "source.organizeImports": "explicit"
+    },
+
+    // Disable built-in TypeScript validation since ESLint is used for linting
+    "typescript.validate.enable": false,
+    "javascript.validate.enable": false,
+
+    // Enable error highlighting for the project
+    "problems.decorations.enabled": true,
+
+    // Ensure team uses LF line endings for consistency
+    "files.autoGuessEncoding": false,
+
+    // Enable auto-save (optional)
+    "files.autoSave": "onFocusChange"
+}
