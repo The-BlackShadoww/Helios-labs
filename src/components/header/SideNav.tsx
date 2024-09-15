@@ -7,7 +7,7 @@ import {
 } from '@/components/ui/sheet';
 import { NavLinksType } from '@/types';
 import Link from 'next/link';
-import { Dispatch } from 'react';
+import { Dispatch, SetStateAction } from 'react';
 
 type RouteType = {
     routes: NavLinksType[];
